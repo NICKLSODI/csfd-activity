@@ -31,7 +31,7 @@ const router = createBrowserRouter([
     element: <AncientGate_3 />,
   },
   {
-    path: "/portalPassword",
+    path: "/",
     element: <PortalPassword />,
   },
 ]);
