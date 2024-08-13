@@ -1,7 +1,7 @@
 import * as React from "react";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import * as ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
 import PortalPassword from "./pages/PortalPassword";
@@ -17,7 +17,7 @@ const theme = extendTheme({
   },
 });
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/AncientGate",
     element: <AncientGate_1 />,
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
     element: <AncientGate_3 />,
   },
   {
-    path: "/",
+    path: "/portalPassword",
     element: <PortalPassword />,
   },
 ]);
